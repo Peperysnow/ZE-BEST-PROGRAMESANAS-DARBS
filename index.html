@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-
+    <title>Galerija</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Attēlu galerija</h1>
+    </header>
+
+    <nav>
+        <button onclick="filtrēt('visi')">Visi</button>
+        <button onclick="filtrēt('daba')">Daba</button>
+        <button onclick="filtrēt('cilveki')">Cilvēki</button>
+    </nav>
+
+    <main id="center-content">
+        <div class="attēls daba"><img src="img/daba1.jpg"></div>
+        <div class="attēls cilveki"><img src="img/cilveki1.jpg"></div>
+        <div class="attēls daba"><img src="img/daba2.jpg"></div>
+    </main>
+
+    <footer>
+        <p>2025 Projekts</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
